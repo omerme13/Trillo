@@ -6,6 +6,13 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: var(--line);
+
+    
+    @media only screen and (max-width: $bp-smallest) {
+        flex-wrap: wrap;
+        height: 11rem;
+        align-content: space-around;
+    }  
 }
 
 .logo {
@@ -17,6 +24,12 @@
     flex: 0 0 40%;
     display: flex;
     justify-content: center;
+
+    @media only screen and (max-width: $bp-smallest) {
+        order: 1;
+        flex: 0 0 100%;
+        background: var(--color-grey-light-2);
+    }  
 
     &__input {
         font-family: inherit;
